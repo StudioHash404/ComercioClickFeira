@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./cadastro.css">
-    <title>Cadastro</title>
+    <title>Cadastro cliente</title>
 </head>
 <body>
     <!-- Conteúdo principal da página de cadastro -->
@@ -12,23 +12,24 @@
 
         <!-- Mensagens de boas-vindas -->
         <div class="register-header">
-            <h1>Crie sua conta!</h1>
+            <h1>Crie sua conta de cliente!</h1>
             <p>Preencha os dados abaixo para começar</p>
         </div>
 
         <!-- Formulário de cadastro principal -->
         <form class="register-form">
 
-            <!-- E-mail -->
-            <div class="form-group">
-                <label for="email">E-mail</label>
-                <input type="email" id="email" name="email" required>
-            </div>
-
             <!-- Usuário -->
             <div class="form-group">
                 <label for="username">Usuário</label>
                 <input type="text" id="username" name="username" required>
+            </div>
+
+
+            <!-- E-mail -->
+            <div class="form-group">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" required>
             </div>
 
             <!-- Grupo da senha -->
@@ -91,10 +92,17 @@
                 <p>Já tem uma conta? <a href="./login.html">Fazer login</a></p>
             </div>
 
+            <div class="login-vendedor">
+                <p>Já tem uma conta de vendedor(a)? <a href="./loginVendedor.html">Fazer login de vendedor(a)</a></p>
+            </div>
+
         </form>
 
     </div>
 
     <script src="./cadastro.js"></script>
+
+    <!--Deus abençoe nosso backend-->
+
 </body>
 </html>
