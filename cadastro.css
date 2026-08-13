@@ -1,0 +1,32 @@
+/* Campo de senha */
+.password-field {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    color: #777;
+}
+
+.eye-icon {
+    width: 20px;
+    height: 20px;
+    fill: #777;
+}
+
+.password-visible .eye-open {
+    display: none;
+}
+
+.password-visible .eye-closed {
+    display: block !important;
+}

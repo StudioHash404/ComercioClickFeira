@@ -1,0 +1,64 @@
+/* ===== REMEMBER ME ===== */
+.form-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.remember-me {
+  display: flex;
+  align-items: center;
+}
+
+.remember-me input[type="checkbox"] {
+  margin-right: 0.5rem;
+}
+
+.remember-me label {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.forgot-password {
+  font-size: 0.9rem;
+  color: #4a90e2;
+  text-decoration: none;
+}
+
+.forgot-password:hover {
+  text-decoration: underline;
+}
+
+/* ===== VISIBILIDADE DA SENHA ===== */
+.password-field {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.toggle-password {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  color: #777;
+}
+
+.eye-icon {
+  width: 20px;
+  height: 20px;
+  fill: #777;
+}
+
+.password-visible .eye-open {
+  display: none;
+}
+
+.password-visible .eye-closed {
+  display: block !important;
+}
