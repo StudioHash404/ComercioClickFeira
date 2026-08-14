@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ptbr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./carrinho.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>Carrinho - ClickFeira</title>
+</head>
+<body>
+    <!-- HEADER COM CONTADOR -->
+    <header>
+        <div class="cart-icon">
+            <i class="fas fa-shopping-cart"></i>
+            <span class="counter">0</span>
+        </div>
+    </header>
+
+    <!-- CONTAINER DO CARRINHO -->
+    <div class="cart-container">
+        <h2>Seu Carrinho</h2>
+        
+        <div id="cart-items">
+            <!-- Itens serão inseridos pelo JS -->
+            <p class="empty-cart">Seu carrinho está vazio</p>
+        </div>
+
+        <div class="cart-total">
+            <h3>Total: R$ 0,00</h3>
+            <button class="checkout-btn" id="finalizar-btn">Finalizar Encomenda</button>
+        </div>
+    </div>
+
+    <!-- LISTA DE PRODUTOS -->
+    <div class="row" id="produtos-lista">
+        <!-- Produtos serão carregados via JS -->
+    </div>
+
+    <script src="./carrinho.js"></script>
+</body>
+</html>
