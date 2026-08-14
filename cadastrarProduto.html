@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./modal.css">
+    <title>Cadastrar Produtos</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Gerenciar Produtos</h1>
+            <!--Botao do modal-->
+            <button class="btn btn-primary" onclick="abrirModal()">+ Novo Produto</button>
+        </div>
+
+        <div id="tabela-produtos">
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nome</th>
+                        <th>Preço</th>
+                        <th>Descrição</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody id="corpo-tabela">
+                </tbody>
+            </table>
+            <div id="vazio" class="empty-message">Nenhum produto cadastrado</div>
+        </div>
+    </div>
+    
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="modal-titulo">Novo Produto</h2>
+                <button class="close" onclick="fecharModal()">&times;</button>
+            </div>
+
+            <form id="form-produto">
+                <input type="hidden" id="id-edicao" value="">
+
+                <div class="form-group">
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="preco">Preço (R$)</label>
+                    <input type="number" id="preco" step="0.01" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="descricao">Descrição</label>
+                    <textarea id="descricao"></textarea>
+                </div>
+
+                <div class="form-actions">
+                    <button type="button" class="btn" onclick="fecharModal()">Cancelar</button>
+
+                    <button type="submit" class="btn btn-sucess" id="botao-salvar">Salvar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="./modal.js"></script>
+</body>
+</html>
